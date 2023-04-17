@@ -7,8 +7,8 @@ namespace api_counter.Controllers
     public class Counter
     {
         public Counter() { }
-        // Create int property called Value holding the counter value
-        // Create string property called Name holding the counter name @EXTENSIONS
+        // @TODO Create int property called Value holding the counter value
+        // @TODO Create string property called Name holding the counter name @EXTENSIONS
     }
 
 
