@@ -6,9 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using Microsoft.AspNetCore.Mvc;
-using api_counter.Repositories;
 using Microsoft.Extensions.Options;
-using api_counter.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.DataProtection.Repositories;
 using System.Xml.Linq;
@@ -33,11 +31,12 @@ namespace api_counter.Test
                 new Counter { Name = "Item 2", Value = 0 },
                 new Counter { Name = "Item 3", Value = 0 }
             };
-            ICounterRepository _repo = new CounterRepository(expectedData);
-            CounterController _counterController = new CounterController(_repo);
+            CounterController _counterController = new CounterController();
+            _counterController.counters.AddRange(expectedData);
 
             // Act
-            var result = _counterController.GetAllCounters().Result as OkObjectResult;
+            // @TODO Replace PlaceholderFunction with your own function name that will return all the counters
+            var result = _counterController.PlaceholderFunction().Result as OkObjectResult;
 
             // Assert
             Assert.IsNotNull(result);
@@ -55,13 +54,14 @@ namespace api_counter.Test
         public void CreateCounter_ReturnsExpectedData()
         {
             // Arrange
-            ICounterRepository _repo = new CounterRepository(new Counter { Name = "Counter", Value = 0 });
-            CounterController _counterController = new CounterController(_repo);
+            CounterController _counterController = new CounterController();
+            _counterController.counters.AddRange(new Counter { Name = "Counter", Value = 0 });
 
             var expectedData = new Counter {Name = "Counter 1", Value = 0 };
 
             // Act
-            var result = _counterController.CreateNewCounter("Counter 1").Result as OkObjectResult;
+            // @TODO Replace PlaceholderFunction with your own function name that will create a new named counter
+            var result = _counterController.PlaceholderFunction().Result as OkObjectResult;
 
             // Assert
             Assert.IsNotNull(result);
@@ -75,17 +75,18 @@ namespace api_counter.Test
         public void IncrementCustomCounter()
         {
             // Arrange
-            ICounterRepository _repo = new CounterRepository(new List<Counter>
+            CounterController _counterController = new CounterController(_repo);
+            _counterController.counters.AddRange(new List<Counter>
             {
                 new Counter { Name = "Counter", Value = 0 },
                 new Counter { Name = "Counter 1", Value = 0 }
             });
-            CounterController _counterController = new CounterController(_repo);
 
             var expectedData = new Counter { Name = "Counter", Value = 1 };
 
             // Act
-            var result = _counterController.IncrementCustomCounter("Counter").Result as OkObjectResult;
+            // @TODO Replace PlaceholderFunction with your own function name that will increment a counter by name
+            var result = _counterController.PlaceholderFunction().Result as OkObjectResult;
 
             // Assert
             Assert.IsNotNull(result);
@@ -99,17 +100,18 @@ namespace api_counter.Test
         public void DecrementCustomCounter()
         {
             // Arrange
-            ICounterRepository _repo = new CounterRepository(new List<Counter>
+            CounterController _counterController = new CounterController();
+            _counterController.counters.AddRange(new List<Counter>
             {
                 new Counter { Name = "Counter", Value = 0 },
                 new Counter { Name = "Counter 1", Value = 0 }
-            });
-            CounterController _counterController = new CounterController(_repo);
+            })
 
             var expectedData = new Counter { Name = "Counter", Value = -1 };
 
             // Act
-            var result = _counterController.DecrementCustomCounter("Counter").Result as OkObjectResult;
+            // @TODO Replace PlaceholderFunction with your own function name that will decrement a counter by name
+            var result = _counterController.PlaceholderFunction().Result as OkObjectResult;
 
             // Assert
             Assert.IsNotNull(result);

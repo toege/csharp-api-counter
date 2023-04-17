@@ -1,6 +1,4 @@
 using api_counter.Controllers;
-using api_counter.Models;
-using api_counter.Repositories;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,7 +21,8 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 });
-builder.Services.AddScoped<ICounterRepository, CounterRepository>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
