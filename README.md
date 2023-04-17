@@ -14,6 +14,7 @@
 ## Core Requirements
 
 You're going to build a simple counter API that stores a number in memory, then provide routes to increment, decrement and retrieve the value of the number.
+When you see a comment in the code with the @TODO tag read it like being part of the instructions
 
 Use this documentation as a reference guide for the controllers: https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0
 - You can ignore the @EXTENSIONS tags for now
