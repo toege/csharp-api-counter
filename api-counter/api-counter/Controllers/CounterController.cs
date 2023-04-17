@@ -11,8 +11,6 @@ namespace api_counter.Controllers
         // @EXTENSIONS @TODO Create string property called Name holding the counter name 
     }
 
-
-
     [ApiController]
     [Route("[controller]")]
     public class CounterController : ControllerBase
