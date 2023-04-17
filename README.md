@@ -14,10 +14,10 @@
 ## Core Requirements
 
 You're going to build a simple counter API that stores a number in memory, then provide routes to increment, decrement and retrieve the value of the number.
-When you see a comment in the code with the @TODO tag read it like being part of the instructions
+When you see a comment in the code with the `@TODO` tag read it like being part of the instructions
 
 Use this documentation as a reference guide for the controllers: https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0
-- You can ignore the @EXTENSIONS tags for now
+- You can ignore the `@EXTENSIONS` tags for now
 1. Annotate the `CounterController` class appropriately to set it up as a REST controller, and map all requests of `http://localhost:4000/counter` to it
    1. Route decorators look like this `[HttpGet("/url/path", Name = "Appropriate endpoint name")]`, `[HttpPost("/url/path", Name = "Appropriate endpoint name")]`
 2. Create a GET method that responds with the current value of the counter. Its initial value should always be 0
@@ -25,8 +25,8 @@ Use this documentation as a reference guide for the controllers: https://learn.m
 4. Create a GET method that maps to the route `http://localhost:4000/counter/decrement` that decreases the counter by 1 and responds with the updated value
 5. After you are done, you will need to update the CoreTests.cs file
    1. Open CoreTests.cs
-   2. Find the lines that have a @TODO
-   3. On the line after the @TODO you will need to replace the PlaceholderFunction with the name of you function in your controller
+   2. Find the lines that have a `@TODO`
+   3. On the line after the `@TODO` you will need to replace the PlaceholderFunction with the name of you function in your controller
 
 ## Extension Requirements
 
