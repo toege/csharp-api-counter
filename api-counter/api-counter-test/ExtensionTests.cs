@@ -105,7 +105,7 @@ namespace api_counter.Test
             {
                 new Counter { Name = "Counter", Value = 0 },
                 new Counter { Name = "Counter 1", Value = 0 }
-            })
+            });
 
             var expectedData = new Counter { Name = "Counter", Value = -1 };
 
