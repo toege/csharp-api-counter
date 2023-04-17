@@ -1,7 +1,7 @@
-# Java API Counter
+# C# API Counter
 
 ## Learning Objectives
-- Use Spring Boot Web to build a simple API
+- Use ASP.NET to build a simple API
 - Use RestController classes to map HTTP requests to class methods
 
 ## Instructions
