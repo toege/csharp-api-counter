@@ -44,7 +44,7 @@ Use this documentation as a reference guide for the controllers: https://learn.m
     - The previous routes you created should respond appropriately
 
 Tips for extensions:
-- Check the comments that have the @EXTENSIONS tag
+- Check the comments that have the `@EXTENSIONS` tag
 
 ## Further work
 
