@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-counter", "api-counter\api-counter.csproj", "{B72B6198-8090-4C72-A9EC-7673DC94FC42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-counter.Main", "api-counter.Main\api-counter.Main.csproj", "{B72B6198-8090-4C72-A9EC-7673DC94FC42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-counter-test", "api-counter-test\api-counter-test.csproj", "{CA1A547E-8277-4B72-AD91-C9278D53DD90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-counter.Test", "api-counter.Test\api-counter.Test.csproj", "{CA1A547E-8277-4B72-AD91-C9278D53DD90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

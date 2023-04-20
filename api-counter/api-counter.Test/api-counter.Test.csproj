@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\api-counter\api-counter.csproj" />
+    <ProjectReference Include="..\api-counter.Main\api-counter.Main.csproj" />
   </ItemGroup>
 
 </Project>
