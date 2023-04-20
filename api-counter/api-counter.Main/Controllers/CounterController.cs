@@ -7,11 +7,9 @@ namespace api_counter.Controllers
     public class Counter
     {
         public Counter() { }
-        // Create int property called Value holding the counter value
-        // Create string property called Name holding the counter name @EXTENSIONS
+        // @TODO Create int property called Value holding the counter value
+        // @EXTENSIONS @TODO Create string property called Name holding the counter name 
     }
-
-
 
     [ApiController]
     [Route("[controller]")]
@@ -25,8 +23,7 @@ namespace api_counter.Controllers
         {
             // @TODO create a new counter on class construction
 
-            // @EXTENSIONS
-            // @TODO make sure you initialize the List of counters
+            // @EXTENSIONS @TODO make sure you initialize the List of counters
         }
 
         // @TODO Write your decorators & function here that will be called when accessing the specific endpoints.
