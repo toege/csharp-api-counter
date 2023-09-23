@@ -39,18 +39,18 @@ namespace api_counter.wwwapi.Controllers
         {
             //write code here replacing the string.Empty
             var counter = string.Empty;
-
+           
             //leave return line the same
-            return counter != null ? Results.Ok(counters) : Results.NotFound();
+            return counter != null ? Results.Ok(counter) : Results.NotFound();
         }
 
         //TODO: 3.  write another controlller method that returns counters that have a value greater than the {number} passed in.
         // use method below as starting point
         [HttpGet]
         [Route("greaterthan{number}")]
-        public async Task<IResult> Get(int number)
+        public async Task<IResult> Get()
         {
-            return Results.Ok(counters.Where(i => i.Value >= number).ToList());
+            return Results.Ok(counters);
         }
 
         ////TODO:  4. write another controlller method that returns counters that have a value less than the {number} passed in.
