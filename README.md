@@ -19,8 +19,6 @@ The List<Counter> counters is the collection you will use within the controller 
 
 Follow the tasks with the `//TODO` comments.   You can use the Task List pane if you wish to view all.  
 
-Use the workshop code which goes with this topic as a guide.  Some microsoft documentation may prove useful: https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0
-
 I would encourage you to attempt the Core and Extensions in this exercise.
 
 ## Further work
