@@ -1,10 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>api_counter.wwwapi</RootNamespace>
+    <UserSecretsId>d088cf2d-948a-4ac6-b8e1-b68084603f23</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
