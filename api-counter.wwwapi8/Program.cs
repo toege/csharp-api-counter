@@ -33,7 +33,7 @@ app.MapGet("GetAllCounters", () =>
 
 //TODO: 2. write a method to return a single counter based on the id being passed in.  complete method below
 app.MapGet("GetACounter/{id}", (int id) =>
-{
+{    
     return TypedResults.Ok(id);
 });
 
