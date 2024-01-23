@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace api_counter.wwwapi.Controllers
 {
-    [Route("[controller]")]
     [ApiController]
+    [Route("counters")]
     public class CounterController : ControllerBase
     {
         public static List<Counter> counters = new List<Counter>();
@@ -26,6 +26,7 @@ namespace api_counter.wwwapi.Controllers
 
         //TODO: 1. write a method that returns all counters in the counters list.  use method below as a starting point
         [HttpGet]
+        [Route("")]
         public async Task<IResult> GetAllCounters()
         {
             //change the number returned in the line below to counter list variable
