@@ -47,10 +47,10 @@ namespace api_counter.wwwapi.Controllers
         //TODO: 3.  write another controlller method that returns counters that have a value greater than the {number} passed in.
         // use method below as starting point
         [HttpGet]
-        [Route("greaterthan{number}")]
+        [Route("greaterthan/{number}")]
         public async Task<IResult> Get()
         {
-            return Results.Ok(counters);
+            return Results.Ok();
         }
 
         ////TODO:4. write another controlller method that returns counters that have a value less than the {number} passed in.
