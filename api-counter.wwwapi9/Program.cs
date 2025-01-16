@@ -38,13 +38,13 @@ counters.MapGet("/{id}", (int id) =>
     return TypedResults.Ok(id);
 });
 
-//TODO: 3.  write another controlller method that returns counters that have a value greater than the {number} passed in.        
+//TODO: 3.  write another method that returns counters that have a value greater than the {number} passed in.        
 counters.MapGet("/greaterthan/{number}", (int number) =>
 {
     return TypedResults.Ok(number);
 });
 
-////TODO:4. write another controlller method that returns counters that have a value less than the {number} passed in.
+////TODO:4. write another method that returns counters that have a value less than the {number} passed in.
 
 //Extension #1
 //TODO:  1. Write a controller method that increments the Value property of a counter of any given Id.
@@ -56,7 +56,9 @@ counters.MapGet("/greaterthan/{number}", (int number) =>
 //e.g.  with an Id=1  the Books counter Value should be decreased from 5 to 4
 //return the counter you have decreased
 
-//Super Optional Extension #1
-//Refactor the code! include a repository layer (interface & concrete class), inject this into the endpoint.
+//Super Optional Extension #1 - Refactor the code!
+// - move the EndPoints into their own class and ensure they are mapped correctly
+// - add a repository layer: interface & concrete class, inject this into the endpoint using the builder.Service
+
 
 app.Run();
