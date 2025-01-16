@@ -1,0 +1,16 @@
+@api_counter.wwwapi9_HostAddress = https://localhost:7012
+
+GET {{api_counter.wwwapi9_HostAddress}}/counters
+Accept: application/json
+
+###
+
+GET {{api_counter.wwwapi9_HostAddress}}/counters/1
+Accept: application/json
+
+###
+
+GET {{api_counter.wwwapi9_HostAddress}}/counters/greaterthan/2
+Accept: application/json
+
+###
